@@ -1,30 +1,30 @@
 ## README
 
-### Tecnologías Utilizadas
+### Technologies Used
 
-- **React**: Para la creación de componentes de interfaz de usuario.
-- **React Context**: Para la gestión global del estado y la comunicación entre componentes.
-- **TypeScript**: Para proporcionar tipado estático y mejorar la seguridad del código.
-- **Jest y React Testing Library**: Para realizar pruebas unitarias.
-- **Tailwind CSS**: Para estilizar componentes de manera modular y eficiente.
-- **Axios**: Para manejar solicitudes HTTP de manera sencilla.
-- **Vite**: Para un entorno de desarrollo rápido y moderno.
+- **React**: For building user interface components.
+- **React Context**: For global state management and inter-component communication.
+- **TypeScript**: For static typing and improving code safety.
+- **Jest y React Testing Library**: For unit testing.
+- **Tailwind CSS**: For modular and efficient styling of components.
+- **Axios**: For handling HTTP requests in a simple way.
+- **Vite**: For a fast and modern development environment.
 
-### Descripción del Proyecto
+### Project Description
 
-Para esta prueba técnica, se ha desarrollado un pequeño dashboard que muestra la siguiente información:
+For this technical test, a small dashboard has been developed that displays the following information:
 
-- **Nombre del cliente**: Hardcodeado al mío :D
-- **Listado de módulos de suscripción**: Indica si están activos o desactivados (estos estados se muestran de forma aleatoria).
-- **Botón para editar vuelos**: Eje principal de la prueba
+- **Client Name**: Hardcoded to mine :D
+- **Subscription Modules List**: Shows whether they are active or inactive (these states are displayed randomly).
+- **Button to Edit Flights**: The main focus of the test
 
-El diseño del dashboard sigue los estilos del primer ejemplo que se mencionaba en el documento de [Airline RFI](https://docs.google.com/document/d/1pm71VuhuXoA-vWgisG0zUFKARx1F9Kk9BbX_fkeu37o/edit#heading=h.7pb623zglks6) (**_Airline’s mockups_**). Los módulos que se muestran son los **_Platform modules_** que aparecen al principio de ese documento. He añadido el dashboard para que se viera más completa la aplicación junto al botón de **_Editar vuelos_**.
+The dashboard design follows the styles of the first example mentioned in the [Airline RFI](https://docs.google.com/document/d/1pm71VuhuXoA-vWgisG0zUFKARx1F9Kk9BbX_fkeu37o/edit#heading=h.7pb623zglks6) (**_Airline’s mockups_**). The modules displayed are the **_Platform modules_** that appear at the beginning of that document. I added the dashboard to make the application look more complete along with the **_Edit Flights_** button.
 
-He usado un patrón de diseño atómico, organizando el código en carpetas: `atoms`, `molecules`, `organisms`, `templates` y `pages`. He creado algunos componentes básicos desde cero (como el `Button` y el `Select`) y para otros como el toaster y el dialog, he utilizado [Shadcn](https://ui.shadcn.com/) para ahorrar tiempo. Para los estilos, me he decidido por [TailwindCSS](https://tailwindcss.com) porque es una forma rápida de maquetar.
+I used an atomic design pattern, organizing the code into folders: `atoms`, `molecules`, `organisms`, `templates` y `pages`. I created some basic components from scratch (like `Button` and `Select`), and for others like toaster and dialog, I used [Shadcn](https://ui.shadcn.com/) to save time. For styling, I chose [TailwindCSS](https://tailwindcss.com) because it's a fast way to design.
 
-A la hora de realizar los tests unitarios he utilizado **_Jest_** y **_Testing Library_**. Para mockear las APIs utilicé una librería que funciona bien con React: [Axios](https://www.npmjs.com/package/axios). Para persistir los datos del modal se ha hecho con **_React Context_**.
+For unit testing, I used **_Jest_** and **_Testing Library_**. To mock APIs, I used a library that works well with React: [Axios](https://www.npmjs.com/package/axios). To persist modal data, I used **_React Context_**.
 
-### Prerequisitos
+### Prerequisites
 
 - **yarn**
 
@@ -32,39 +32,39 @@ A la hora de realizar los tests unitarios he utilizado **_Jest_** y **_Testing L
 npm install -g yarn
 ```
 
-### Instalación y Ejecución
+### Installation and Running
 
-1. Clonar el repositorio:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/ericmunozs/caravelo_assignment
 ```
 
-2. Navegar al directorio del proyecto:
+2. Navigate to the project directory:
 
 ```bash
 cd caravelo_assignment
 ```
 
-3. Instalar las dependencias:
+3. Install dependencies:
 
 ```bash
 yarn
 ```
 
-4 Ejecutar el proyecto:
+4. Run the project:
 
 ```bash
 yarn dev
 ```
 
-### Ejecutar tests
+### Run Tests
 
 ```bash
 yarn test
 ```
 
-### Hacer build
+### Build
 
 ```bash
 yarn build
